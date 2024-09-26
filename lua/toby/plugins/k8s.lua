@@ -1,0 +1,51 @@
+return {
+	{
+		"ramilito/kubectl.nvim",
+		config = function()
+			require("kubectl").setup()
+			local keymap = vim.keymap
+
+			-- default mappings
+			keymap.set("n", "<leader>ka", "<Plug>(kubectl.alias_view)", { desc = "Kubectl alias view" })
+			keymap.set("n", "<leader>kb", "<Plug>(kubectl.browse)", { desc = "Kubectl browse" })
+			keymap.set("n", "<leader>kc", "<Plug>(kubectl.contexts_view)", { desc = "Kubectl contexts view" })
+			keymap.set("n", "<leader>kC", "<Plug>(kubectl.cordon)", { desc = "Kubectl cordon" })
+			keymap.set("n", "<leader>kj", "<Plug>(kubectl.create_job)", { desc = "Kubectl create job" })
+			keymap.set("n", "<leader>kD", "<Plug>(kubectl.delete)", { desc = "Kubectl delete" })
+			keymap.set("n", "<leader>kd", "<Plug>(kubectl.describe)", { desc = "Kubectl describe" })
+			keymap.set("n", "<leader>kr", "<Plug>(kubectl.drain)", { desc = "Kubectl drain" })
+			keymap.set("n", "<leader>ke", "<Plug>(kubectl.edit)", { desc = "Kubectl edit" })
+			keymap.set("v", "<leader>kf", "<Plug>(kubectl.filter_term)", { desc = "Kubectl filter term" })
+			keymap.set("n", "<leader>kF", "<Plug>(kubectl.filter_view)", { desc = "Kubectl filter view" })
+			keymap.set("n", "<leader>kw", "<Plug>(kubectl.follow)", { desc = "Kubectl follow" })
+			keymap.set("n", "<leader>ku", "<Plug>(kubectl.go_up)", { desc = "Kubectl go up" })
+			keymap.set("n", "<leader>k?", "<Plug>(kubectl.help)", { desc = "Kubectl help" })
+			keymap.set("n", "<leader>kh", "<Plug>(kubectl.history)", { desc = "Kubectl history" })
+			keymap.set("n", "<leader>kk", "<Plug>(kubectl.kill)", { desc = "Kubectl kill" })
+			keymap.set("n", "<leader>kl", "<Plug>(kubectl.logs)", { desc = "Kubectl logs" })
+			keymap.set("n", "<leader>kn", "<Plug>(kubectl.namespace_view)", { desc = "Kubectl namespace view" })
+			keymap.set("n", "<leader>kp", "<Plug>(kubectl.portforward)", { desc = "Kubectl port forward" })
+			keymap.set("n", "<leader>kP", "<Plug>(kubectl.portforwards_view)", { desc = "Kubectl port forwards view" })
+			keymap.set("n", "<leader>kx", "<Plug>(kubectl.prefix)", { desc = "Kubectl prefix" })
+			keymap.set("n", "<leader>kq", "<Plug>(kubectl.quit)", { desc = "Kubectl quit" })
+			keymap.set("n", "<leader>kr", "<Plug>(kubectl.refresh)", { desc = "Kubectl refresh" })
+			keymap.set("n", "<leader>kR", "<Plug>(kubectl.rollout_restart)", { desc = "Kubectl rollout restart" })
+			keymap.set("n", "<leader>ks", "<Plug>(kubectl.scale)", { desc = "Kubectl scale" })
+			keymap.set("n", "<leader>kS", "<Plug>(kubectl.select)", { desc = "Kubectl select" })
+			keymap.set("n", "<leader>ki", "<Plug>(kubectl.set_image)", { desc = "Kubectl set image" })
+			keymap.set("n", "<leader>ko", "<Plug>(kubectl.sort)", { desc = "Kubectl sort" })
+			keymap.set("n", "<leader>kX", "<Plug>(kubectl.suspend_job)", { desc = "Kubectl suspend job" })
+			keymap.set("n", "<leader>kt", "<Plug>(kubectl.tab)", { desc = "Kubectl tab" })
+			keymap.set("n", "<leader>kT", "<Plug>(kubectl.timestamps)", { desc = "Kubectl timestamps" })
+			keymap.set("n", "<leader>kN", "<Plug>(kubectl.top_nodes)", { desc = "Kubectl top nodes" })
+			keymap.set("n", "<leader>kP", "<Plug>(kubectl.top_pods)", { desc = "Kubectl top pods" })
+			keymap.set("n", "<leader>kU", "<Plug>(kubectl.uncordon)", { desc = "Kubectl uncordon" })
+			keymap.set("n", "<leader>k1", "<Plug>(kubectl.view_1)", { desc = "Kubectl view 1" })
+			keymap.set("n", "<leader>k2", "<Plug>(kubectl.view_2)", { desc = "Kubectl view 2" })
+			keymap.set("n", "<leader>k3", "<Plug>(kubectl.view_3)", { desc = "Kubectl view 3" })
+			keymap.set("n", "<leader>k4", "<Plug>(kubectl.view_4)", { desc = "Kubectl view 4" })
+			keymap.set("n", "<leader>k5", "<Plug>(kubectl.view_5)", { desc = "Kubectl view 5" })
+			keymap.set("n", "<leader>kw", "<Plug>(kubectl.wrap)", { desc = "Kubectl wrap" })
+		end,
+	},
+}
