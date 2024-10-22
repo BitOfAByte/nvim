@@ -13,7 +13,7 @@
   "friendly-snippets": { "branch": "main", "commit": "de8fce94985873666bd9712ea3e49ee17aadb1ed" },
   "instant.nvim": { "branch": "master", "commit": "294b6d08143b3db8f9db7f606829270149e1a786" },
   "kubectl.nvim": { "branch": "main", "commit": "d216502e7926a4341c96d847f223df6957f652f2" },
-  "lazy.nvim": { "branch": "main", "commit": "1159bdccd8910a0fd0914b24d6c3d186689023d9" },
+  "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
   "lazygit.nvim": { "branch": "main", "commit": "56760339a81cd1540d5a72fd9d93010a2677b55d" },
   "lspkind.nvim": { "branch": "master", "commit": "59c3f419af48a2ffb2320cea85e44e5a95f71664" },
   "lua-reactivex": { "branch": "master", "commit": "d2b8244cc8bd6ade712f05f36204765037fa4ec5" },
